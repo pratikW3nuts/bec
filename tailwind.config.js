@@ -1,18 +1,43 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+ 
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+			'PT Sans': ["PT Sans", "sans-serif"],
+      'Oswald': ["Oswald", "sans-serif"],
+		},
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+				white: "#ffffff",
+        bodytextlight: "#000000f0",
+        primary: "#04CE78",
+			},
+      container: {
+				center: true,
+
+				padding: {
+					DEFAULT: "15px",
+				},
+
+				screens: {
+					sm: "750px",
+					md: "970px",
+					lg: "1230px",
+				},
+			},
+      fontSize: {
+        h1: ["52px", "1.54"],
+        h2: ["52px", "1.54"],
+        h3: ["20px", "1.2"],
       },
     },
   },
   plugins: [],
-};
+}
