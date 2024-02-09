@@ -52,3 +52,18 @@ h6 {
 .unpack-header-nav .dropdown_menu{@apply  invisible opacity-0 transition-all duration-300 ease-in-out translate-y-full}
 .unpack-header-nav ul li:hover .dropdown_menu{@apply visible opacity-[1] translate-y-0}
 .unpack-btnbox a{@apply flex items-center justify-center py-[20px] text-[16px] uppercase text-white leading-[158%] bg-primary min-w-[160px]}
+.banner .rightbox .box + .box{@apply pt-[40px]}
+.banner:after{
+  content: '';
+    position: absolute;
+    display: block;
+    height: 179px;
+    width: 100%;
+    background: #FF5E41;
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(100% 0, 50% 0, 100% 179px);
+}
+
+.aboutus_wrap .detailblock p + p{@apply pt-[24px]}
+.aboutus_wrap .aboutdetail .socialrow a + a{@apply ml-[16px]}

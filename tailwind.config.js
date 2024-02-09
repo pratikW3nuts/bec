@@ -10,8 +10,8 @@ export default {
   ],
   theme: {
     fontFamily: {
-			'PT Sans': ["PT Sans", "sans-serif"],
-      'Oswald': ["Oswald", "sans-serif"],
+			'Sarabun': ["Sarabun", "sans-serif"],
+      'Roboto': ["Roboto", "sans-serif"],
 		},
     extend: {
       colors: {
@@ -19,24 +19,31 @@ export default {
 				white: "#ffffff",
         black:"#222222",
         paragraph:"#A7A7A7",
+        skin:"#E9E9E9",
+        darkgrey:"#222222",
 			},
+      // clipPath: {
+      //   'triangle': 'polygon(100% 0, 50% 0, 100% 133px)',
+      // },
       container: {
 				center: true,
 
 				padding: {
 					DEFAULT: "15px",
 				},
-
 				screens: {
 					sm: "750px",
 					md: "970px",
 					lg: "1230px",
 				},
 			},
+      backgroundImage:{
+        "service":"url(../assets/images/servicebg.png)",
+      },
       fontSize: {
         h1: ["118px", "113%"],
-        h2: ["52px", "1.54"],
-        h3: ["20px", "1.2"],
+        h2: ["64px", "120%"],
+        h3: ["20px", "120%"],
       },
     },
   },

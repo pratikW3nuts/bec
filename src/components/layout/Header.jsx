@@ -14,12 +14,12 @@ const Header = () => {
                         <div className="unpack-header-block flex items-center justify-between py-[33px]">
                             <div className="unpack-logobox">
                                 <Link href="#" className="max-w-[248px] block">
-                                    <Image src={Logo} className="w-full h-auto"/>
+                                    <Image src={Logo} alt="logo" className="w-full h-auto"/>
                                 </Link>
                             </div>
                             <div className="unpack-header-nav flex">
                                 <ul className="flex items-center">
-                                    <li className="relative"><Link href="#" class="active transition-all duration-300 ease-in-out flex items-center text-[16px] uppercase text-white leading-[158%] hover:text-primary">Home</Link></li>
+                                    <li className="relative"><Link href="#" className="active transition-all duration-300 ease-in-out flex items-center text-[16px] uppercase text-white leading-[158%] hover:text-primary">Home</Link></li>
                                     <li className="relative"><Link href="#" className="flex transition-all duration-300 ease-in-out items-center text-[16px] uppercase text-white leading-[158%] hover:text-primary">About us</Link></li>
                                     <li className="relative"><Link href="#" className="flex transition-all duration-300 ease-in-out items-center text-[16px] uppercase text-white leading-[158%] hover:text-primary">Service </Link></li>
                                     <li className="relative">
