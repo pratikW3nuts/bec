@@ -7,7 +7,7 @@ import Link from "next/link";
 const Service = () => {
   return (
     <>
-      <div className="service_wrap bg-service py-[100px] bg-no-repeat bg-cover bg-center relative before:absolute before:block before:bg-black before:opacity-[0.5] before:content-[''] before:h-full before:w-full before:top-0 before:left-0">
+      <div className="service_wrap bg-service py-[100px] bg-no-repeat bg-cover bg-center relative before:absolute before:block before:bg-black before:opacity-[0.9] before:content-[''] before:h-full before:w-full before:top-0 before:left-0">
         <div className="container">
           <div className="service_row relative z-[1]">
             <div className="titlebox text-center">

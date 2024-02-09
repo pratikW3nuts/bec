@@ -53,6 +53,7 @@ h6 {
 .unpack-header-nav ul li:hover .dropdown_menu{@apply visible opacity-[1] translate-y-0}
 .unpack-btnbox a{@apply flex items-center justify-center py-[20px] text-[16px] uppercase text-white leading-[158%] bg-primary min-w-[160px]}
 .banner .rightbox .box + .box{@apply pt-[40px]}
+.banner{position: relative;}
 .banner:after{
   content: '';
     position: absolute;
@@ -62,8 +63,21 @@ h6 {
     background: #FF5E41;
     bottom: 0;
     right: 0;
-    clip-path: polygon(100% 0, 50% 0, 100% 179px);
+    clip-path: polygon(104% 0, 42% 60%, 100% 179px);
 }
-
+.banner:before{
+  content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #222222;
+    opacity: 0.5;
+    left: 0;
+    top: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 87%, 0 100%, 0 100%, 0 100%, 0% 30%);
+    z-index: 1;
+}
+.banner .bgimg{    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 87%, 0 100%, 0 100%, 0 100%, 0% 30%);}
 .aboutus_wrap .detailblock p + p{@apply pt-[24px]}
 .aboutus_wrap .aboutdetail .socialrow a + a{@apply ml-[16px]}

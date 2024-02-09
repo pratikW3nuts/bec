@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import bnrimg from "@/assets/images/bnrimg.png";
+import truck from "@/assets/images/truck.png";
 import get_start from "@/assets/images/get_start.svg";
 
 const Banner = ()=>{
     return(
         <>
-        <div className="banner relative before:absolute before:block before:bg-black before:opacity-[0.5] before:content-[''] before:h-full before:w-full before:top-0 before:left-0">
+        <div className="banner relative">
             <div className="bgimg">
-                <Image src={bnrimg} alt="bnr" className="h-auto w-full" />
+                <Image src={truck} alt="bnr" className="h-auto w-full" />
             </div>
                 <div className="contentouter absolute top-0 left-0 h-full w-full flex items-center justify-center">
                     <div className="container">
@@ -45,8 +45,8 @@ const Banner = ()=>{
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
-        </div>
         </>
     )
 }
