@@ -18,11 +18,10 @@ body {
   margin: 0;
   padding: 0;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 0;
-  color: rgba(0, 0, 0, 0.94);
-  font-family: 'PT Sans';
-  scroll-behavior: smooth;
+  color: #222222;
+  font-family: 'Roboto';
 }
 
 iframe,
@@ -41,8 +40,15 @@ h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
-  font-weight: 700;
-  color: #000000;
-  font-family: 'Oswald';
+  font-weight: 600;
+  color: #222222;
+  font-family: 'Sarabun';
   text-transform: uppercase;
 }
+
+/*  */
+.unpack-header-block >.unpack-header-nav > ul > li + li{@apply ml-[60px]}
+.unpack-btnbox{@apply flex ml-[60px]}
+.unpack-header-nav .dropdown_menu{@apply  invisible opacity-0 transition-all duration-300 ease-in-out translate-y-full}
+.unpack-header-nav ul li:hover .dropdown_menu{@apply visible opacity-[1] translate-y-0}
+.unpack-btnbox a{@apply flex items-center justify-center py-[20px] text-[16px] uppercase text-white leading-[158%] bg-primary min-w-[160px]}

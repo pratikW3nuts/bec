@@ -1,39 +1,42 @@
 // const { Fragment } = require("react")
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/assets/images/logo.svg";
+import Logo from "@/assets/images/Logo.svg";
+import dropicon from "@/assets/images/dropicon.svg";
 
 const Header = () => {
 
     return (
         <>
-            <header>
-                <div className="pc_headerwrap py-[30px] sticky z-[15] top-0 flex items-center justify-center">
-                    <div className="container relative flex items-center justify-center">
-                        <div className="pc_logobox my-0 mx-auto">
-                            <Link href="#" className="flex items-center justify-center flex-col">
-                                <Image src={Logo} alt="logo"/>
-                                <strong className="block font-Oswald font-normal text-[10px] text-bodytextlight pt-[10px] uppercase"><span className="text-primary">Brenda</span> Expert Coaching </strong>
-                            </Link>
-                        </div>
-
-                        <div className="pc_navigation flex items-center justify-between absolute px-[15px] left-0 right-0 h-0 top-[50%]">
-                            <ul className="p-0 m-0 flex items-center">
-                                <li className="m-0 p-0 flex items-center"><Link href="#" className="active font-Oswald uppercase transition-none">Home</Link></li>
-                                <li className="m-0 p-0 flex items-center"><Link href="#" className="active font-Oswald uppercase transition-none">Podcast</Link></li>
-                                <li className="m-0 p-0 flex items-center"><Link href="#" className="active font-Oswald uppercase transition-none">Video</Link></li>
-                                <li className="m-0 p-0 flex items-center"><Link href="#" className="active font-Oswald uppercase transition-none">Blog</Link></li>
-                            </ul>
-                            <ul className="p-0 m-0 flex items-center">
-                                <li className="m-0 p-0 flex items-center"><Link className="active font-Oswald uppercase transition-none" href="#">About</Link></li>
-                                <li className="m-0 p-0 flex items-center"><Link className="active font-Oswald uppercase transition-none" href="#">Team</Link></li>
-                                <li className="m-0 p-0 flex items-center"><Link className="active font-Oswald uppercase transition-none" href="#">Contact</Link></li>
-                            </ul>
-                        </div>
-                        <div className="pc_hamburger" id="pc_hamburger-1">
-                            <span className="pc_line"></span>
-                            <span className="pc_line"></span>
-                            <span className="pc_line"></span>
+            <header className="unpack_header bg-[#222222] border-b border-solid border-white fixed top-0 left-0 z-[1111] w-full p-0 transition-all duration-300 ease-in-out">
+                <div className="unpack-header-wrap">
+                    <div className="container">
+                        <div className="unpack-header-block flex items-center justify-between py-[33px]">
+                            <div className="unpack-logobox">
+                                <Link href="#" className="max-w-[248px] block">
+                                    <Image src={Logo} className="w-full h-auto"/>
+                                </Link>
+                            </div>
+                            <div className="unpack-header-nav flex">
+                                <ul className="flex items-center">
+                                    <li className="relative"><Link href="#" class="active transition-all duration-300 ease-in-out flex items-center text-[16px] uppercase text-white leading-[158%] hover:text-primary">Home</Link></li>
+                                    <li className="relative"><Link href="#" className="flex transition-all duration-300 ease-in-out items-center text-[16px] uppercase text-white leading-[158%] hover:text-primary">About us</Link></li>
+                                    <li className="relative"><Link href="#" className="flex transition-all duration-300 ease-in-out items-center text-[16px] uppercase text-white leading-[158%] hover:text-primary">Service </Link></li>
+                                    <li className="relative">
+                                        <Link href="#" className="flex transition-all duration-300 ease-in-out items-center text-[16px] uppercase text-white leading-[158%] hover:text-primary">Features<i className="text-0 block ml-[8px]"><Image src={dropicon} alt="dropicon"/></i></Link>
+                                        <ul className="dropdown_menu flex flex-col items-start absolute left-0 bg-[#222222] p-[15px] min-w-[200px]">
+                                            <li className="relative flex w-full"><Link href="#" className="flex w-full transition-all duration-300 ease-in-out text-[16px] uppercase text-white leading-[158%] hover:text-primary">1</Link></li>
+                                            <li className="relative flex w-full"><Link href="#" className="flex w-full transition-all duration-300 ease-in-out text-[16px] uppercase text-white leading-[158%] hover:text-primary">2</Link></li>
+                                            <li className="relative flex w-full"><Link href="#" className="flex w-full transition-all duration-300 ease-in-out text-[16px] uppercase text-white leading-[158%] hover:text-primary">3</Link></li>
+                                            <li className="relative flex w-full"><Link href="#" className="flex w-full transition-all duration-300 ease-in-out text-[16px] uppercase text-white leading-[158%] hover:text-primary">4</Link></li>
+                                        </ul>
+                                    </li>
+                                    <li className="relative"><Link href="#" className="flex transition-all duration-300 ease-in-out items-center text-[16px] uppercase text-white leading-[158%] hover:text-primary">Blog </Link></li>
+                                </ul>
+                                <div className="unpack-btnbox">
+                                    <Link className="breezebtn" href="#">contact us</Link>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -15,9 +15,10 @@ export default {
 		},
     extend: {
       colors: {
+        primary: "#FF5E41",
 				white: "#ffffff",
-        bodytextlight: "#000000f0",
-        primary: "#04CE78",
+        black:"#222222",
+        paragraph:"#A7A7A7",
 			},
       container: {
 				center: true,
@@ -33,7 +34,7 @@ export default {
 				},
 			},
       fontSize: {
-        h1: ["52px", "1.54"],
+        h1: ["118px", "113%"],
         h2: ["52px", "1.54"],
         h3: ["20px", "1.2"],
       },
